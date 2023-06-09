@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 's.dart';
-import 'topic_node.dart';
-import 'topic_page.dart';
+import '../../app/s.dart';
+import '../../model/topic_node.dart';
+import '../topic_page.dart';
 
 class TopicsListView extends StatelessWidget {
   final String? topicDescription;

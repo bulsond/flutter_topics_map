@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'topic_node.dart';
-import 'topics_list_view.dart';
-import 'topics_parser.dart';
+import '../model/topic_node.dart';
+import 'widget/topics_list_view.dart';
+import '../service/topics_parser.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +17,13 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    // TopicsParser.initTopics()
+    //     .then((topics) => setState(() => this.topics = topics));
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
     TopicsParser.initTopics()
         .then((topics) => setState(() => this.topics = topics));
   }

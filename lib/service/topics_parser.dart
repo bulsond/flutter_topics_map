@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
-import 'doc.dart';
-import 'topic_node.dart';
+import '../model/doc.dart';
+import '../model/topic_node.dart';
 
 class TopicsParser {
   static const _basePath = 'matrix';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'topic_node.dart';
-import 'topics_list_view.dart';
+import '../model/topic_node.dart';
+import 'widget/topics_list_view.dart';
 
 class TopicPage extends StatelessWidget {
   final TopicNode topic;
